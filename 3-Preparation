@@ -1,0 +1,23 @@
+In order to use the solution there are some prerequesits and steps to do:
+
+1. You need to have an gmail email-account.
+
+2. Get a twilio-account in order to be able to send SMS messages based on appplication scripts.
+I have no relationship with twilio,just selected this service as it looks capable
+of doing things I needed for an acceptable price. 
+
+3. Send a testmessage from your inReach to the twilio-phone-number as the inReach-service
+only allows replys from phone-numbers previously messaged from inReach. This only needs to be done once, as the status
+of the phone-number is remembered. This is also a way to find yout the phone-number of your inReach device,
+if you have not used it before.
+
+4. In the scripts published here no need to fill in:
+  a- your twilio credentials (accountSid amd athorityToken)
+  b- the mobile number attached to your twilio account
+  c- the phone-number of your inReach device
+  
+5. In addition to implementing the google scripts in your google drive account you need
+to upgrade your twilio test-account to productuin acount. Test-accounts are not able to message
+unverified target numbers, and you technically cannot verfify your inReach number. Therefore I highly recommend to set
+"mobile=true" in the twilio-send script to be able to test the system in sending the reply to your
+mobile phone (not the twilio mobile).
