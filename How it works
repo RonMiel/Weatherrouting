@@ -1,0 +1,13 @@
+After the solution is setup and tested you will be able to:
+
+1. Send a route request to your gmail account as needed, intended is every 24 hrs.
+
+2. A Google-script checking periodically for this incoming mail on your account is completing the request with the
+position included in the message and forwwarding the correct request via mail to fastseas.com
+
+3. Another Google-script checking perdiodically for the reply from fastseas.com is picking up the returned route,
+extracting the data from the attached gpx-file and sending selected information as SMS to your inReach Device.
+If the route needs more that 160 char, the information is sent in more than one message.
+
+4. A second SMS provides general information about the whole rest of the route to the target destination.
+Just to have a general view of expected conditions and travel time.
